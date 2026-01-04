@@ -22,7 +22,7 @@ This project provides tools for analyzing running segments from Strava using the
    ```env
    STRAVA_ACCESS_TOKEN=your_token_here
    ```
-4. add your location in main.py
+4. Add your location in main.py
 5. Run the main script:
    ```bash
    python main.py
