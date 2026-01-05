@@ -147,9 +147,10 @@ def analyze_segments_around(client, center_lat, center_lng, radius_km, user_max_
             "pace_s_per_km": analysis["pace_s_per_km"],
             "wr_pace_s_per_km": analysis["wr_pace_s_per_km"],
             "flag": analysis["flag"],
-            "category": category
+            "category": category,
+            "id": segment["id"]
         })
-
+    #sort by slowest pace first
     results_sorted = sorted(results, key=lambda x: x["pace_s_per_km"], reverse=True)
     return results_sorted
 
